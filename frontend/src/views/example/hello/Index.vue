@@ -6,6 +6,8 @@
     <p class="description">
       A fast, desktop software development framework
     </p>
+    <button @click="changeLang('en-us')">en{{ $t('common.more') }}</button>
+    <button @click="changeLang('zh-cn')">cn{{ $t('common.more') }}</button>
     <p class="actions">
       <a class="setup" href="https://www.kaka996.com/" target="_blank">Get Started</a>
     </p>
@@ -73,4 +75,20 @@ html:not(.dark) .accent,
   transition-duration: 0.2s;
 }
 </style>
-  
+<script setup>
+// 国际化
+import { useI18n } from 'vue-i18n'
+const I18n = useI18n()
+const { locale } = useI18n()
+console.warn('locale' , locale.value)
+
+const changeLang = (lang) => {
+  console.warn('locale' , locale.value,lang)
+
+  localStorage.setItem('language', lang ?? 'zh-cn')
+  locale.value = lang
+  console.log(localStorage.getItem('language'))
+}
+// 可以拿到我们当前设置的默认语言，切换语言更改locale.value的值即可，
+// 但要跟你index.js中message设置的值一致！
+</script>

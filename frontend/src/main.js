@@ -11,5 +11,8 @@ app.config.productionTip = false
 for (const i in components) {
   app.component(i, components[i])
 }
+// 国际化
+import i18n from "@/language";
+app.use(i18n)
 
 app.use(Router).mount('#app')
