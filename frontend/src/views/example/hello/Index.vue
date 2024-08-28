@@ -8,6 +8,7 @@
     </p>
     <button @click="changeLang('en-us')">en{{ $t('common.more') }}</button>
     <button @click="changeLang('zh-cn')">cn{{ $t('common.more') }}</button>
+    <el-button type="primary">Primary</el-button>
     <p class="actions">
       <a class="setup" href="https://www.kaka996.com/" target="_blank">Get Started</a>
     </p>

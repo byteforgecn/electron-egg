@@ -1,11 +1,14 @@
 export default {
+    type: 'zh-cn',
+    name: '简体中文',
+    describe: '简体中文1',
+    sidebar: {
+        '/': "首页",
+        setting: "设置",
+        about: "关于"
+    },
     common: {
         more: "查看更多",
-    },
-    leftMenus: {
-        "/": "Home",
-        Home: "Home",
-        home: "Home",
     },
     headMenus: {
         "subTitle": "Organization service platform",

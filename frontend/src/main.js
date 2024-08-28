@@ -14,5 +14,9 @@ for (const i in components) {
 // 国际化
 import i18n from "@/language";
 app.use(i18n)
+// ui框架
+import ElementPlus from 'element-plus'
+import 'element-plus/dist/index.css'
+app.use(ElementPlus)
 
 app.use(Router).mount('#app')

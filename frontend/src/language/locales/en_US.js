@@ -1,11 +1,14 @@
 export default {
+    type: 'en-us',
+    name: 'English',
+    describe: 'English1',
     common: {
         more: "Look More",
     },
-    leftMenus: {
-        "/": "Home",
-        Home: "Home",
-        home: "Home",
+    sidebar: {
+        '/': "index",
+        setting: "setting",
+        about: "about"
     },
     headMenus: {
         "subTitle": "Organization service platform",
