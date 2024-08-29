@@ -13,7 +13,7 @@
 
 <script>
 import Sidebar from "./components/Sidebar.vue";
-
+import {test} from "@/api/bluetooth";
 export default {
   name: 'App',
   components: {
@@ -21,6 +21,8 @@ export default {
   },
   setup() {
     document.getElementById('loadingPage').remove()
+    test()
+
   }
 }
 </script>

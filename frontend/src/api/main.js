@@ -5,6 +5,7 @@
  */
 const ipcApiRoute = {
   test: 'controller.example.test',
+  bluetooth: 'controller.bluetooth.test',
 }
 
 export {
